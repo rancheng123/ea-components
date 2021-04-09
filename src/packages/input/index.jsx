@@ -1,7 +1,7 @@
 import './index.scss'
 import { Input } from "element-ui";
 export default {
-  name: "EaInput2",
+  name: "EaInput",
   components: {
     Input,
   },

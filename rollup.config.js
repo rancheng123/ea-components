@@ -6,8 +6,8 @@ import scss from 'rollup-plugin-scss';
 
 import babel from 'rollup-plugin-babel';
 
-// let target = 'input2/index.jsx'
-// let out = 'lib/input2/index.js';
+// let target = 'input/index.jsx'
+// let out = 'lib/input/index.js';
 
 let target = 'index.js';
 let out = 'lib/ea/index.js';
@@ -24,7 +24,10 @@ module.exports = {
     babel({
       exclude: 'node_modules/**',
       runtimeHelpers: true,
-      "plugins": ["babel-plugin-transform-vue-jsx"],
+      "plugins": [
+        //"babel-plugin-transform-vue-jsx",
+        "@babel/plugin-syntax-jsx",
+      ],
     }),
     scss(),
     vue(),
