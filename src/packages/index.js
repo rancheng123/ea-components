@@ -1,5 +1,8 @@
+import "element-ui/lib/theme-chalk/index.css";
+import EaInput from './input2/index.jsx';
 
-import EaInput from './input';
 
 
-export EaInput;
+export default {
+  EaInput
+};
