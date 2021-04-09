@@ -9,6 +9,8 @@ import scss from 'rollup-plugin-scss';
 
 import babel from 'rollup-plugin-babel';
 
+import jsx from 'rollup-plugin-jsx-js';
+
 
 // import { eslint } from 'rollup-plugin-eslint';
 // eslint({
@@ -25,21 +27,20 @@ module.exports = {
     name: 'aaa'
   },
   plugins: [
+    babel({
+      exclude: 'node_modules/**',
+
+      runtimeHelpers: true,
+      "plugins": ["babel-plugin-transform-vue-jsx"],
+      //"presets": [ "@babel/preset-env", "vue" ],
+    }),
     //css(),
     scss(),
     vue(),
-    // babel({
-    //   exclude: 'node_modules/**',
-    //   runtimeHelpers: true,
-    //   "presets": [
-    //     [
-    //       "env",
-    //       {
-    //         "modules": false
-    //       }
-    //     ]
-    //   ],
-    // })
+    //jsx({precise: true}),
+
+
+
 
   ]
 }
