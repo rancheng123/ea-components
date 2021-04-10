@@ -1,7 +1,7 @@
 {
   "name": "lanhu-components5",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.2",
+  "private": false,
   "mian": "lib/ea/index.js",
   "scripts": {
     "dev": "concurrently \"npm run serve\" \"npm run build\" ",
