@@ -1,0 +1,8 @@
+https://zhuanlan.zhihu.com/p/142554961
+
+
+1. 使用nodemon 监控目录变化
+2. 使用rollup 打包
+3. 使用yalc 发版
+
+

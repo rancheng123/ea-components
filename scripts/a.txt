@@ -1,0 +1,5 @@
+https://nexus.lanhuapp.com/repository/npm-hosted/lanhu-components5/-/lanhu-components5-0.1.2.tgz
+https://nexus.lanhuapp.com/repository/npm-group/lanhu-components5
+
+
+npm config set registry https://nexus.lanhuapp.com/repository/npm-hosted/
