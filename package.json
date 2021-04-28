@@ -5,14 +5,15 @@
   "private": false,
   "mian": "lib/ea/index.js",
   "scripts": {
-    "dev": "nodemon --watch src -e jsx,scss -x \"npm run build && yalc push\"",
-    "dev": "concurrently \"npm run serve\" \"npm run build\" ",
+    "dev": "nodemon --watch src -e js,jsx,scss -x \"npm run build && yalc push\"",
     "build": "rollup --config ./rollup.config.js",
+    "dev2": "concurrently \"npm run serve\" \"npm run build2\" ",
     "build2": "rollup --watch --config ./rollup.config.js",
     "serve": "vue-cli-service serve",
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy": "sh a.sh"
   },
   "dependencies": {
     "@vue/babel-helper-vue-jsx-merge-props": "^1.2.1",

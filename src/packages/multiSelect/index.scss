@@ -1,0 +1,33 @@
+.EaMultiSelectWrap{
+  display: inline-block;
+  max-width: 240px;
+  padding: 14px 16px;
+  background: white;
+  border-radius: 10px;
+  border: 0.5px solid #EEEEEE;
+  box-sizing: border-box;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.06);
+
+  .EaCheckboxWrap{
+    margin-bottom: 10px;
+  }
+  .EaCheckboxWrap:last-child{
+    margin-bottom: 0px;
+  }
+
+}
+
+
+.count{
+  font-family: PingFang SC;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 17px;
+  color: rgba(47,46,63,0.3)
+}
+
+
+
+
+

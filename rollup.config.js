@@ -19,7 +19,8 @@ module.exports = {
   output: {
     file: out,
     format: 'umd',
-    name: 'aaa'
+    name: 'aaa',
+    sourceMap: true
   },
   plugins: [
     babel({
