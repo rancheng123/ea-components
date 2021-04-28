@@ -7,12 +7,21 @@ import scss from 'rollup-plugin-scss';
 import babel from 'rollup-plugin-babel';
 import json from 'rollup-plugin-json';
 
-// let target = 'input/index.jsx'
-// let out = 'lib/input/index.js';
+import typescript from 'rollup-plugin-typescript2';
 
-let target = 'index.js';
-let out = 'lib/ea/index.js';
 
+
+
+var target = 'index.js';
+var out = 'lib/ea/index.js';
+
+// 测试 start
+//var target = 'checkbox2/index.vue'
+//var out = 'lib/input/index.js';
+// 测试 end
+
+import path from 'path';
+import { DEFAULT_EXTENSIONS } from '@babel/core';
 
 module.exports = {
   input: './src/packages/' + target,
@@ -23,6 +32,12 @@ module.exports = {
     sourceMap: true
   },
   plugins: [
+    typescript({
+      tsconfig: path.resolve(__dirname, './tsconfig.json'), // 本地ts配置
+      extensions: ['.js', '.ts', '.tsx', '.vue']
+    }),
+
+
     babel({
       exclude: 'node_modules/**',
       runtimeHelpers: true,
@@ -30,6 +45,12 @@ module.exports = {
         //"babel-plugin-transform-vue-jsx",
         "@babel/plugin-syntax-jsx",
       ],
+      extensions: [
+        ...DEFAULT_EXTENSIONS,
+        '.ts',
+        '.tsx'
+      ]
+
     }),
     scss(),
     vue(),

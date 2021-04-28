@@ -10,9 +10,13 @@ import EaMultiSelect from './multiSelect/index.jsx';
 import EaTextElipsiss from './textElipsiss/index.jsx';
 
 
+import EaCheckbox2 from './checkbox2/index.tsx';
+
+
 export default {
   EaInput,
   EaInput2,
   EaMultiSelect,
-  EaTextElipsiss
+  EaTextElipsiss,
+  EaCheckbox2
 };
