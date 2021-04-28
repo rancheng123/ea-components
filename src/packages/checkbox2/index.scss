@@ -1,0 +1,34 @@
+
+.EaCheckboxWrap{
+
+  .el-checkbox__inner{
+    border-radius: 3px;
+    border: 1.2px solid #EEEFF1;
+  }
+  .el-checkbox__input.is-focus .el-checkbox__inner {
+    border-color: #EEEFF1;
+  }
+
+  .el-checkbox__inner:hover {
+    border-color: #EEEFF1;
+  }
+  .el-checkbox__inner::after {
+    top: 2px;
+    height: 5px;
+  }
+  .el-checkbox__input.is-checked+.el-checkbox__label {
+    color: inherit;
+  }
+  .el-checkbox__input.is-checked .el-checkbox__inner,
+  .el-checkbox__input.is-indeterminate .el-checkbox__inner,
+
+  {
+    background-color: #36CFC9;
+    border-color: #36CFC9;
+  }
+
+
+
+
+
+}
